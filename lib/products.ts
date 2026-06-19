@@ -1,5 +1,6 @@
 import catalog from "@/data/products.json";
 import type { Product, ProductQuery, ProductListResult, SortKey, Category } from "./types";
+import { baseURL } from "@/baseUrl";
 
 const PRODUCTS: Product[] = catalog as Product[];
 const DEFAULT_LIMIT = 12;
@@ -85,6 +86,13 @@ function paginate(
 ): ProductListResult {
   const lim = Math.min(Math.max(1, limit), MAX_LIMIT);
   return { items: items.slice(offset, offset + lim), total: items.length };
+}
+
+export function withAbsoluteImages(products: Product[]): Product[] {
+  return products.map((p) => ({
+    ...p,
+    image: p.image.startsWith("http") ? p.image : `${baseURL}${p.image}`,
+  }));
 }
 
 export function listProducts(q: ProductQuery = {}): ProductListResult {

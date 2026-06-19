@@ -27,14 +27,14 @@ export default function Widget() {
 
   return (
     <div
-      className="mx-auto w-full max-w-5xl p-3 sm:p-4 text-[--color-ink]"
+      className="mx-auto w-full max-w-5xl p-3 sm:p-4 text-ink"
       style={{ maxHeight, overflowY: "auto" }}
     >
-      <div className="rounded-[8px] border border-[--color-muted] bg-[--color-surface] p-3 sm:p-4">
+      <div className="rounded-[8px] border border-muted bg-surface p-3 sm:p-4">
         <div className="mb-3 flex items-center justify-between">
           <Brand />
           {!inChatGpt && (
-            <span className="text-xs text-[--color-ink]/50">preview</span>
+            <span className="text-xs text-ink/50">preview</span>
           )}
         </div>
 

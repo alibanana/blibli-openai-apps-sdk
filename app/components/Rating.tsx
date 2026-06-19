@@ -14,7 +14,7 @@ export function Rating({ rating, sold }: RatingProps) {
 
   return (
     <div
-      className="text-xs text-[--color-ink]/60"
+      className="text-xs text-ink/60"
       aria-label={`Rating: ${rating?.toFixed(1) ?? "N/A"}, Terjual: ${sold ?? 0}`}
     >
       {parts.join(" · ")}

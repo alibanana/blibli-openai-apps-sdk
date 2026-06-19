@@ -1,7 +1,7 @@
 import { baseURL } from "@/baseUrl";
 import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
-import { listProducts, searchProducts } from "@/lib/products";
+import { listProducts, searchProducts, withAbsoluteImages } from "@/lib/products";
 import {
   WIDGET_URI,
   widgetMeta,
@@ -14,7 +14,7 @@ import {
 const SORTS = ["relevance", "price-asc", "price-desc", "rating", "sold"] as const;
 
 async function loadWidgetHtml(): Promise<string> {
-  const res = await fetch(`${baseURL}/`, { headers: { "x-widget": "1" } });
+  const res = await fetch(`${baseURL}/`);
   return res.text();
 }
 
@@ -35,7 +35,7 @@ const handler = createMcpHandler(async (server) => {
         {
           uri: uri.href,
           mimeType: "text/html+skybridge",
-          text: `<html>${html}</html>`,
+          text: html,
           _meta: resourceMeta,
         },
       ],
@@ -73,7 +73,7 @@ const handler = createMcpHandler(async (server) => {
     async ({ category, sort, limit }) => {
       const s = sort ?? "sold";
       const { items, total } = listProducts({ category, sort: s, limit });
-      const data = listPayload({ category: category ?? null, sort: s, total, products: items });
+      const data = listPayload({ category: category ?? null, sort: s, total, products: withAbsoluteImages(items) });
       return {
         content: [{ type: "text", text: narrate(data.title, total) }],
         structuredContent: data,
@@ -109,7 +109,7 @@ const handler = createMcpHandler(async (server) => {
     async ({ query, sort, limit }) => {
       const s = sort ?? "relevance";
       const { items, total } = searchProducts({ query, sort: s, limit });
-      const data = searchPayload({ query, sort: s, total, products: items });
+      const data = searchPayload({ query, sort: s, total, products: withAbsoluteImages(items) });
       return {
         content: [{ type: "text", text: narrate(data.title, total) }],
         structuredContent: data,
