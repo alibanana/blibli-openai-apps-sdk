@@ -1,0 +1,43 @@
+widget/index.html
+  80828bd7b7aa49e5 1-11
+widget/main.tsx
+  80828bd7b7aa49e5 1-13
+vite.config.ts
+  80828bd7b7aa49e5 1-30
+app/components/Brand.tsx
+  80828bd7b7aa49e5 4-18
+lib/mcp-meta.ts
+  80828bd7b7aa49e5 2,18-25
+app/mcp/route.ts
+  80828bd7b7aa49e5 1-2,17-21,23-24
+app/layout.tsx
+  80828bd7b7aa49e5 10-14,22
+app/hooks/use-is-chatgpt-app.ts
+  80828bd7b7aa49e5 2,4-8,11-14,16-17
+next.config.ts
+  80828bd7b7aa49e5 4-8
+widget/widget.css
+  80828bd7b7aa49e5 1-24
+package.json
+  80828bd7b7aa49e5 6,8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "521ca9bbbc4c9e57cb0b6283fc9d3e00ca135af1",
+  "prompts": {
+    "80828bd7b7aa49e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1cba839f-b97e-4902-bbec-c0e37a6544de",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Alifio Rasyid <232753832+gdncomm-alifio-rasyid@users.noreply.github.com>",
+      "messages": [],
+      "total_additions": 140,
+      "total_deletions": 155,
+      "accepted_lines": 137,
+      "overriden_lines": 0
+    }
+  }
+}
