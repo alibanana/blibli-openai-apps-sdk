@@ -1,0 +1,157 @@
+baseUrl.ts
+  d6eb9d2807766f43 1-7
+package.json
+  d6eb9d2807766f43 1-28
+app/hooks/use-open-external.ts
+  d6eb9d2807766f43 1-22
+app/hooks/use-send-message.ts
+  d6eb9d2807766f43 1-12
+app/hooks/use-max-height.ts
+  d6eb9d2807766f43 1-9
+app/components/Badge.tsx
+  0efcaeea2d83a3b0 1-14
+lib/types.ts
+  2279eed010dc1770 1-43
+app/components/ProductCard.tsx
+  0efcaeea2d83a3b0 1-66
+public/blibli-logo.svg
+  d6eb9d2807766f43 1-7
+app/hooks/use-openai-global.ts
+  d6eb9d2807766f43 1-41
+app/hooks/use-request-display-mode.ts
+  d6eb9d2807766f43 1-13
+tsconfig.json
+  d6eb9d2807766f43 1-27
+app/components/ResultsHeader.tsx
+  0efcaeea2d83a3b0 1-32
+lib/mcp-meta.ts
+  78e0df75e8860c03 1-61
+lib/format.ts
+  2279eed010dc1770 1-9
+lib/products.ts
+  2279eed010dc1770 1-110
+next.config.ts
+  d6eb9d2807766f43 1-8
+app/hooks/use-widget-props.ts
+  d6eb9d2807766f43 1-18
+app/components/Brand.tsx
+  0efcaeea2d83a3b0 1-14
+app/mcp/route.ts
+  d6eb9d2807766f43 2-3,13,21,27,32,42,119-121,123-124
+  6ff751ec41f41fb3 122
+  78e0df75e8860c03 1,4-12,14-20,22-26,28-31,33-41,43-118
+app/components/Chip.tsx
+  0efcaeea2d83a3b0 1-21
+postcss.config.mjs
+  d6eb9d2807766f43 1-5
+app/components/ProductGrid.tsx
+  0efcaeea2d83a3b0 1-19
+app/hooks/use-call-tool.ts
+  d6eb9d2807766f43 1-19
+.gitignore
+  6ff751ec41f41fb3 16-18
+app/components/Price.tsx
+  0efcaeea2d83a3b0 1-27
+app/page.tsx
+  d6eb9d2807766f43 1,9,22,28,64,66-67
+  0efcaeea2d83a3b0 2-8,10-21,23-27,29-63,65
+data/products.json
+  2279eed010dc1770 1-316
+app/hooks/use-widget-state.ts
+  d6eb9d2807766f43 1-51
+app/components/Rating.tsx
+  0efcaeea2d83a3b0 1-23
+app/hooks/use-display-mode.ts
+  d6eb9d2807766f43 1-10
+lib/preview.ts
+  0efcaeea2d83a3b0 1-11
+app/components/EmptyState.tsx
+  0efcaeea2d83a3b0 1-16
+app/hooks/types.ts
+  d6eb9d2807766f43 1-104
+middleware.ts
+  d6eb9d2807766f43 1-26
+app/hooks/index.ts
+  d6eb9d2807766f43 1-18
+app/hooks/use-is-chatgpt-app.ts
+  d6eb9d2807766f43 1-16
+app/components/Skeleton.tsx
+  0efcaeea2d83a3b0 1-30
+app/layout.tsx
+  d6eb9d2807766f43 1-149
+app/globals.css
+  d6eb9d2807766f43 1-14,16-19
+  0efcaeea2d83a3b0 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "c4d63706b6ae89792018f1ffb32e43a8426eb85f",
+  "prompts": {
+    "0efcaeea2d83a3b0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7231b2e1-611e-4be5-9d5f-ccf52f082dc3",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Alifio Rasyid <232753832+gdncomm-alifio-rasyid@users.noreply.github.com>",
+      "messages": [],
+      "total_additions": 698,
+      "total_deletions": 30,
+      "accepted_lines": 680,
+      "overriden_lines": 0
+    },
+    "2279eed010dc1770": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f1002ff-3201-4f9f-abe5-d9f7f4bec07d",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Alifio Rasyid <232753832+gdncomm-alifio-rasyid@users.noreply.github.com>",
+      "messages": [],
+      "total_additions": 680,
+      "total_deletions": 0,
+      "accepted_lines": 680,
+      "overriden_lines": 0
+    },
+    "6ff751ec41f41fb3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43779676-ccd8-4a30-a3ef-56b68991689c",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Alifio Rasyid <232753832+gdncomm-alifio-rasyid@users.noreply.github.com>",
+      "messages": [],
+      "total_additions": 4,
+      "total_deletions": 0,
+      "accepted_lines": 4,
+      "overriden_lines": 0
+    },
+    "78e0df75e8860c03": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48ca6420-0efc-4279-b58a-a257ff2a08b9",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Alifio Rasyid <232753832+gdncomm-alifio-rasyid@users.noreply.github.com>",
+      "messages": [],
+      "total_additions": 172,
+      "total_deletions": 8,
+      "accepted_lines": 172,
+      "overriden_lines": 0
+    },
+    "d6eb9d2807766f43": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "75e3bd1f-6d12-4e35-82ac-df4faa6d6828",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Alifio Rasyid <232753832+gdncomm-alifio-rasyid@users.noreply.github.com>",
+      "messages": [],
+      "total_additions": 647,
+      "total_deletions": 0,
+      "accepted_lines": 627,
+      "overriden_lines": 0
+    }
+  }
+}
