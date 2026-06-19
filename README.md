@@ -2,8 +2,6 @@
 
 A Next.js app that exposes a [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server so ChatGPT can browse and search Blibli products and render them in a branded widget.
 
-![Widget preview](/.claude/generated/initial-plan/assets/widget-preview-1024px.png)
-
 ## How it works
 
 ```
