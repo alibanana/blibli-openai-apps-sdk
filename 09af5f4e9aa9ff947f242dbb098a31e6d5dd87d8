@@ -1,0 +1,43 @@
+app/components/ResultsHeader.tsx
+  0de64a9c24573ea9 21-22,25,27
+app/components/Chip.tsx
+  0de64a9c24573ea9 14-15
+app/components/Price.tsx
+  0de64a9c24573ea9 12,16,21
+app/mcp/route.ts
+  0de64a9c24573ea9 4,38,76,112
+lib/products.ts
+  0de64a9c24573ea9 3,91-97
+app/page.tsx
+  0de64a9c24573ea9 30,33,37
+app/components/Rating.tsx
+  0de64a9c24573ea9 17
+app/components/EmptyState.tsx
+  0de64a9c24573ea9 10,12
+app/components/Skeleton.tsx
+  0de64a9c24573ea9 3-4,6-9
+app/components/ProductCard.tsx
+  0de64a9c24573ea9 16-17,19,29,37,45,53,60
+app/components/Badge.tsx
+  0de64a9c24573ea9 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "09af5f4e9aa9ff947f242dbb098a31e6d5dd87d8",
+  "prompts": {
+    "0de64a9c24573ea9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3bf633e7-1a26-4628-bdf7-61f4841bdb93",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Alifio Rasyid <232753832+gdncomm-alifio-rasyid@users.noreply.github.com>",
+      "messages": [],
+      "total_additions": 43,
+      "total_deletions": 35,
+      "accepted_lines": 42,
+      "overriden_lines": 0
+    }
+  }
+}
