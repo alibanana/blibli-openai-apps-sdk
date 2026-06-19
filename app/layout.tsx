@@ -5,6 +5,7 @@ import { baseURL } from "@/baseUrl";
 export const metadata: Metadata = {
   title: "Blibli on ChatGPT",
   description: "Browse and search Blibli products inside ChatGPT.",
+  icons: { icon: "/blibli-icon.png" },
 };
 
 export default function RootLayout({
