@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 28" fill="none" aria-label="Blibli">
+  <!-- Icon mark: two overlapping rounded squares -->
+  <rect x="1" y="4" width="11" height="11" rx="3" fill="#0072ff"/>
+  <rect x="6" y="13" width="11" height="11" rx="3" fill="#0072ff" opacity="0.6"/>
+  <!-- Wordmark -->
+  <text x="21" y="21" font-family="-apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="700" fill="#0072ff" letter-spacing="-0.3">blibli</text>
+</svg>

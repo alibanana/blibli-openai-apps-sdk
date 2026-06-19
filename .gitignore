@@ -13,6 +13,9 @@ dist/
 .env.*
 !.env.example
 
+# typescript
+tsconfig.tsbuildinfo
+
 # misc
 .DS_Store
 *.pem
