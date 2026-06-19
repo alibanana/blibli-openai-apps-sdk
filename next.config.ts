@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
-import { baseURL } from "./baseUrl";
 
 const nextConfig: NextConfig = {
-  assetPrefix: baseURL,
+  // The /mcp route reads widget/dist/index.html at runtime; make sure the file
+  // is bundled into the serverless function on Vercel.
+  outputFileTracingIncludes: {
+    "/mcp": ["./widget/dist/**/*"],
+  },
 };
 
 export default nextConfig;

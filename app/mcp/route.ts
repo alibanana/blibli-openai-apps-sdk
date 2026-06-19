@@ -1,4 +1,5 @@
-import { baseURL } from "@/baseUrl";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
 import { listProducts, searchProducts, withAbsoluteImages } from "@/lib/products";
@@ -13,9 +14,14 @@ import {
 
 const SORTS = ["relevance", "price-asc", "price-desc", "rating", "sold"] as const;
 
+// Serve the self-contained widget produced by `vite build` (widget/dist/index.html).
+// It inlines all JS + CSS and uses no <base href>, so it satisfies the strict
+// ChatGPT Apps SDK sandbox CSP. (The old approach fetched the full Next.js page,
+// which referenced external _next/static JS+CSS chunks and a <base> tag — all
+// blocked by the skybridge CSP.)
 async function loadWidgetHtml(): Promise<string> {
-  const res = await fetch(`${baseURL}/`);
-  return res.text();
+  const file = path.join(process.cwd(), "widget", "dist", "index.html");
+  return readFile(file, "utf8");
 }
 
 const handler = createMcpHandler(async (server) => {

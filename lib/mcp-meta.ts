@@ -1,4 +1,5 @@
 import type { Product, SortKey } from "./types";
+import { baseURL } from "@/baseUrl";
 
 export const WIDGET_URI = "ui://widget/blibli-products.html";
 
@@ -14,6 +15,14 @@ export const resourceMeta = {
   "openai/widgetDescription":
     "Blibli product results — image-first cards with price, discount, rating and free-shipping badges.",
   "openai/widgetPrefersBorder": true,
+  // Allow the sandbox iframe to load product images (and any other assets)
+  // from the deployment origin. The widget JS/CSS itself is inlined, so the
+  // only external requests are the product <img> URLs produced by
+  // withAbsoluteImages().
+  "openai/widgetCSP": {
+    connect_domains: [] as string[],
+    resource_domains: [baseURL],
+  },
 } as const;
 
 export function narrate(title: string, total: number) {

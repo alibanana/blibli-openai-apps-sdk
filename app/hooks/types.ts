@@ -95,7 +95,6 @@ export class SetGlobalsEvent extends CustomEvent<{
 declare global {
   interface Window {
     openai: API & OpenAIGlobals;
-    innerBaseUrl: string;
   }
 
   interface WindowEventMap {
